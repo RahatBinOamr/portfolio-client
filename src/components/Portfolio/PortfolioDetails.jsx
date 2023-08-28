@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Slide, Zoom } from 'react-reveal';
 import { Link, useParams } from 'react-router-dom';
+import ParticleDBg from '../particles/ParticlesDBg';
 
 const PortfolioDetails = () => {
   const { id } = useParams();
@@ -26,6 +27,7 @@ const PortfolioDetails = () => {
   console.log(server);
   return (
     <>
+      <ParticleDBg />
       <div className=" ">
         <Link to={'/'}>
           <button className="bg-pink-500 p-2 rounded-md shadow-md">
